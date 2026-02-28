@@ -1,1 +1,259 @@
-# online_shopping_project
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ronik Dress House | Premium Branded Cloths</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { font-family: 'Poppins', sans-serif; background-color: #f8fafc; scroll-behavior: smooth; }
+        .logo-font { font-family: 'Bungee', cursive; }
+        
+        /* Premium Card Styling */
+        .ronik-card {
+            background: white;
+            border: 2px solid #e2e8f0;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease-in-out;
+            overflow: hidden;
+        }
+        .ronik-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            border-color: #f59e0b; /* Gold hover border */
+        }
+        .ronik-card img {
+            width: 100%;
+            height: 320px; /* Fixed height */
+            object-fit: cover; /* Ensures image covers area without distortion */
+            border-bottom: 2px solid #e2e8f0;
+        }
+
+        /* Modern Button Styling */
+        .btn-ronik {
+            background: #FFD700;
+            color: black;
+            font-weight: 700;
+            padding: 12px 24px;
+            border-radius: 12px;
+            border: 2px solid black;
+            box-shadow: 4px 4px 0px #000;
+            transition: all 0.1s;
+        }
+        .btn-ronik:active {
+            transform: translate(2px, 2px);
+            box-shadow: 0px 0px 0px #000;
+        }
+
+        /* Category Filter Button Style */
+        .category-btn {
+            background: #fff;
+            color: #000;
+            font-weight: 600;
+            padding: 8px 18px;
+            border-radius: 20px;
+            border: 2px solid #e2e8f0;
+            transition: all 0.3s;
+        }
+        .category-btn:hover, .category-btn.active {
+            background: #FFD700;
+            border-color: #000;
+        }
+
+        /* Floating WhatsApp Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25d366;
+            color: white;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 35px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            border: 3px solid #000;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="https://wa.me/8801315295310" target="_blank" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <nav class="bg-white border-b-2 border-[#e2e8f0] sticky top-0 z-50 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="cursor-pointer">
+                <h1 class="logo-font text-3xl md:text-4xl text-[#3D52D5]">RONIK <span class="text-[#FFD700]">DRESS</span></h1>
+                <p class="text-[10px] font-bold tracking-[0.3em] uppercase text-gray-500">Official Brand Shop</p>
+            </div>
+            
+            <div class="hidden lg:flex gap-10 font-bold uppercase text-sm">
+                <a href="#boys" class="hover:text-[#3D52D5] border-b-2 border-transparent hover:border-[#FFD700] transition">Boys Collection</a>
+                <a href="#girls" class="hover:text-[#3D52D5] border-b-2 border-transparent hover:border-[#FFD700] transition">Girls Collection</a>
+                <a href="#kids" class="hover:text-[#3D52D5] border-b-2 border-transparent hover:border-[#FFD700] transition">Kids Special</a>
+            </div>
+
+            <div class="flex items-center gap-5 text-2xl">
+                <a href="https://www.facebook.com/share/17K3gvTwbY/" target="_blank" class="text-blue-600 hover:scale-110 transition">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <button class="bg-[#FFD700] text-black text-sm font-bold px-4 py-1 rounded-full border border-black hidden sm:block">CART (0)</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="container mx-auto my-10 p-10 md:p-20 bg-[#3D52D5] rounded-[40px] border-4 border-black text-white text-center md:text-left relative overflow-hidden shadow-xl">
+        <div class="relative z-10 max-w-3xl">
+            <h2 class="text-6xl md:text-8xl font-extrabold mb-6 leading-none uppercase">
+                Ronik Dress <span class="text-[#FFD700]">Collection</span>
+            </h2>
+            <p class="text-xl md:text-2xl mb-10 font-medium italic">
+                "Top brand collections now at your fingertips. Quality products, premium comfort."
+            </p>
+            <div class="flex flex-wrap justify-center md:justify-start gap-5">
+                <a href="#collection" class="btn-ronik flex items-center gap-3">
+                    EXPLORE COLLECTION <i class="fas fa-arrow-right text-black"></i>
+                </a>
+                <a href="https://wa.me/8801315295310" class="btn-ronik flex items-center gap-3 bg-white hover:bg-gray-100 border-black text-black">
+                    <i class="fab fa-whatsapp text-2xl"></i> ORDER ON WHATSAPP
+                </a>
+            </div>
+        </div>
+        <div class="absolute -right-10 -bottom-10 w-96 h-96 bg-[#FFD700] rounded-full opacity-30 shadow-inner"></div>
+    </header>
+
+    <main id="collection" class="container mx-auto px-4 py-16">
+        <div class="text-center mb-16 max-w-2xl mx-auto">
+            <h3 class="text-4xl font-extrabold uppercase inline-block border-b-8 border-[#FFD700] pb-2">Our Full Brand Collection</h3>
+            <p class="text-gray-600 mt-6 font-medium italic">Premium material, "Experience excellence with our exclusive designs and premium fabrics. Finished to perfection—Order directly now!" WhatsApp ba Facebook Pages e.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+            
+            <div id="boys" class="ronik-card">
+                <img src="file:///C:/Ronik/r9.png" alt="Men Tee">
+                <div class="p-8">
+                    <span class="bg-blue-100 text-blue-700 text-xs px-3 py-1 rounded-full font-bold uppercase">New Arrival</span>
+                    <h4 class="text-2xl font-extrabold uppercase mt-4 mb-2">Ronik Premium T-Shirt</h4>
+                    <p class="text-gray-600 text-sm font-medium mb-6">Export quality 100% cotton material. Elegant typography design. "Lasts Longer, Feels Better. Stay Comfortable Every Day.".</p>
+                    <div class="flex justify-between items-center mb-6">
+                        <span class="text-3xl font-extrabold text-[#3D52D5]">৳৭৫০</span>
+                        <div class="flex gap-1.5 text-xs font-bold text-red-500 bg-red-100 px-2 rounded">20% OFF</div>
+                    </div>
+                    <a href="https://wa.me/8801315295310?text=I want to buy Ronik Premium T-Shirt" class="btn-ronik w-full flex justify-center items-center gap-3">
+                        <i class="fab fa-whatsapp"></i> BUY ON WHATSAPP
+                    </a>
+                </div>
+            </div>
+
+            <div id="girls" class="ronik-card border-l-4 border-[#FFD700]">
+                <img src="file:///C:/Ronik/R1.png" alt="Women Luxury">
+                <div class="p-8">
+                    <span class="bg-purple-100 text-purple-700 text-xs px-3 py-1 rounded-full font-bold uppercase">Luxury Collection</span>
+                    <h4 class="text-2xl font-extrabold uppercase mt-4 mb-2">Exclusive Silk Dress</h4>
+                    <p class="text-gray-600 text-sm font-medium mb-6">Luxury Ronik Brand box packaging. "The ultimate gift. Elegant, stylish, and uniquely yours. Stand out with Ronik Dress Collection.".</p>
+                    <div class="flex justify-between items-center mb-6">
+                        <span class="text-3xl font-extrabold text-[#3D52D5]">৳২৪৫০</span>
+                        <span class="bg-green-100 text-green-700 text-xs px-3 py-1 rounded-full font-bold uppercase">PREMIUM</span>
+                    </div>
+                    <a href="https://wa.me/8801315295310?text=I want to buy Exclusive Silk Dress" class="btn-ronik w-full flex justify-center items-center gap-3">
+                        <i class="fab fa-whatsapp"></i> BUY ON WHATSAPP
+                    </a>
+                </div>
+            </div>
+
+            <div id="kids" class="ronik-card">
+                <img src="file:///C:/Ronik/r8.png" alt="Kids Tee">
+                <div class="p-8">
+                    <span class="bg-green-100 text-green-700 text-xs px-3 py-1 rounded-full font-bold uppercase">Kids Special</span>
+                    <h4 class="text-2xl font-extrabold uppercase mt-4 mb-2">Cartoon Print Tee</h4>
+                    <p class="text-gray-600 text-sm font-medium mb-6">ছোট্ট সোনামণিদের জন্য আরামদায়ক ফ্যাব্রিক এবং মজার সব কার্টুন প্রিন্ট। টেকসই এবং স্কিন-ফ্রেন্ডলি ম্যাটেরিয়াল!.</p>
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="text-3xl font-extrabold text-[#3D52D5]">৳৫৫০</span>
+                    </div>
+                     <div class="flex justify-between items-center mb-6 text-sm text-gray-500 font-bold uppercase">
+                        <span>Sizes: S, M, L</span>
+                        <span class="text-green-600">IN STOCK</span>
+                    </div>
+                    <a href="https://wa.me/8801315295310?text=I want to buy Kids Cartoon Print Tee" class="btn-ronik w-full flex justify-center items-center gap-3 text-black">
+                        <i class="fab fa-whatsapp"></i> BUY ON WHATSAPP
+                    </a>
+                </div>
+            </div>
+
+            <div class="ronik-card">
+                <img src="file:///C:/Ronik/R5%20(2).png" alt="Cargo">
+                <div class="p-8">
+                    <span class="bg-orange-100 text-orange-700 text-xs px-3 py-1 rounded-full font-bold uppercase">Urban Style</span>
+                    <h4 class="text-2xl font-extrabold uppercase mt-4 mb-2">Ronik Urban Cargo</h4>
+                    <p class="text-gray-600 text-sm font-medium mb-6">"Built for the Grind. ⚒️ Featuring a multiple pocket design and heavy-duty durable denim. The ultimate collection for rough use with a stylish, comfortable look.".</p>
+                    <div class="flex justify-between items-center mb-6">
+                        <span class="text-3xl font-extrabold text-[#3D52D5]">৳১২৫০</span>
+                        <span class="line-through text-gray-400 font-bold">৳১৫০০</span>
+                    </div>
+                    <a href="https://wa.me/8801315295310?text=I want to buy Ronik Urban Cargo Pants" class="btn-ronik w-full flex justify-center items-center gap-3">
+                        <i class="fab fa-whatsapp"></i> BUY ON WHATSAPP
+                    </a>
+                </div>
+            </div>
+
+             <div class="ronik-card overflow-hidden">
+                <img src="file:///C:/Ronik/R_kids.png" alt="Kids Set">
+                <div class="p-8">
+                    <span class="bg-green-100 text-green-700 text-xs px-3 py-1 rounded-full font-bold uppercase">Kids Special</span>
+                    <h4 class="text-2xl font-extrabold mt-4 uppercase">Ronik Junior Set</h4>
+                    <p class="text-sm text-gray-600 my-4 font-medium">Premium branding junior collection set. "Feel the softness. Love the colors. Ultra-soft fabric meets vibrant new designs!".</p>
+                    <div class="flex justify-between items-center mb-6">
+                        <span class="text-3xl font-extrabold text-[#3D52D5]">৳৯৫০</span>
+                    </div>
+                    <a href="https://wa.me/8801315295310?text=I want to buy Ronik Junior Set" class="btn-ronik w-full flex justify-center items-center gap-3">
+                        <i class="fab fa-whatsapp"></i> BUY ON WHATSAPP
+                    </a>
+                </div>
+            </div>
+
+            <div class="ronik-card overflow-hidden">
+                <img src="file:///C:/Ronik/R2.png" alt="Brand Tees">
+                <div class="p-8">
+                    <span class="bg-blue-100 text-blue-700 text-xs px-3 py-1 rounded-full font-bold uppercase">New Arrival</span>
+                    <h4 class="text-2xl font-extrabold mt-4 uppercase">Official Logo Tee</h4>
+                    <p class="text-sm text-gray-600 my-4 font-medium">Simple yet elegant. Official Ronik Dress Collection logo printed tees. Cotton blend fabric Ja porun aramdayok feel.</p>
+                    <div class="flex justify-between items-center mb-6">
+                        <span class="text-3xl font-extrabold text-[#3D52D5]">৳৬৫০</span>
+                    </div>
+                    <a href="https://wa.me/8801315295310?text=I want to buy Official Logo Printed Tee" class="btn-ronik w-full flex justify-center items-center gap-3">
+                        <i class="fab fa-whatsapp"></i> BUY ON WHATSAPP
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="bg-black text-white py-16 mt-16 shadow-inner">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="logo-font text-4xl text-[#FFD700] mb-6">RONIK DRESS HOUSE</h2>
+            <p class="mb-4 text-gray-400 font-medium">Gaibandha, Dhaka, Bangladesh | hotline: 01315295310</p>
+            <p class="mb-8 font-semibold italic text-[#FFD700]">আপনার স্টাইলকে করুন আরও আকর্ষণীয়! বিশ্বাস ও সবার সেরা ফ্যাশনে প্রিমিয়াম টাচ নিয়ে এলো Ronik Dress Collection।"</p>
+            
+            <div class="flex justify-center gap-10 text-4xl mb-10">
+                <a href="https://www.facebook.com/share/17K3gvTwbY/" target="_blank" class="hover:text-blue-500 hover:scale-110 transition transition"><i class="fab fa-facebook"></i></a>
+                <a href="https://wa.me/8801315295310" target="_blank" class="hover:text-green-500 hover:scale-110 transition"><i class="fab fa-whatsapp"></i></a>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 text-sm text-gray-500">
+                <p>© 2026 Ronik Dress House. All Rights Reserved. </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
